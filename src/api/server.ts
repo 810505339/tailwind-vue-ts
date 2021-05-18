@@ -3,6 +3,7 @@ import axios, {AxiosInstance} from 'axios'
 
 const env = import.meta.env
 
+
 const instance: AxiosInstance = axios.create({
     baseURL: env.DEV ? env.VITE_BASE_URL : '',
     timeout: 60000,
